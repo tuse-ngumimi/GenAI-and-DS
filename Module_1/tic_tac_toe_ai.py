@@ -3,8 +3,6 @@ import random
 # this is for the 9 spaces on the board 
 board = [' '] * 9
 
-# This dictionary is the "memory" of the AI.
-# key = (board as tuple, move) , value = how good that move was
 q_table = {}
 
 
@@ -30,7 +28,6 @@ def check_win(b, player):
 
 
 def check_tie(b):
-    # if there is no empty space left, it's a tie
     return ' ' not in b
 
 
