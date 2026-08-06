@@ -32,5 +32,5 @@ Source: [Kaggle](https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-est
 ```
 3. Run the script
 ```bash
-   python real_estate_pricing_py.py
+   python real_estate_pricing.py
 ```
