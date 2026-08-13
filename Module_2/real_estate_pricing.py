@@ -3,6 +3,7 @@ import pandas as pd
 data = pd.read_csv(r'C:\Users\Ngumimi\genai-ds\Module_2\realtor-data.csv', encoding='latin1')
 
 print(data.head(10))
+print()
 print(data.describe())
 print("The columns present in this dataset include: ", data.columns.tolist())
 
