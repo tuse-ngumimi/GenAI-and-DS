@@ -5,6 +5,7 @@ data = pd.read_csv(r'C:\Users\Ngumimi\genai-ds\Module_2\realtor-data.csv', encod
 print(data.head(10))
 print()
 print(data.describe())
+print()
 print("The columns present in this dataset include: ", data.columns.tolist())
 
 print("************************" * 5)
