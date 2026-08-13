@@ -39,3 +39,13 @@ plt.tight_layout()
 plt.savefig('3_histograms.png', dpi=150, bbox_inches='tight')
 plt.show()
 
+# Below are the box plots for company sales data
+melted = df[products].melt(var_name='Product', value_name='Units Sold')
+
+plt.figure(figsize=(11, 6))
+sns.boxplot(data=melted, x='Product', y='Units Sold', hue='Product', palette='Set2', legend=False)
+plt.title('Spread of Monthly Sales by Product', fontsize=14, fontweight='bold')
+plt.xticks(rotation=20)
+plt.tight_layout()
+plt.savefig('4_box_plots.png', dpi=150)
+plt.show()
