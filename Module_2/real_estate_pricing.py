@@ -4,6 +4,8 @@ data = pd.read_csv(r'C:\Users\Ngumimi\genai-ds\Module_2\realtor-data.csv', encod
 
 print(data.head(10))
 print()
+print(data.info())
+print()
 print(data.describe())
 print()
 print("The columns present in this dataset include: ", data.columns.tolist())
@@ -45,4 +47,4 @@ print(data[['price', 'acre_lot', 'house_size']].std())
 
 print("************************" * 5)
 print("\nCorrelation matrix for numeric features:")
-print(data.corr())
+print(data.corr(numeric_only=True))
