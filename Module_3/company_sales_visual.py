@@ -36,7 +36,7 @@ for ax, product in zip(axes.flatten(), products):
     ax.set_title(product.capitalize())
 plt.suptitle('Distribution of Monthly Sales by Product', fontsize=15, fontweight='bold')
 plt.tight_layout()
-plt.savefig('3_histograms.png', dpi=150, bbox_inches='tight')
+plt.savefig('histograms.png', dpi=150, bbox_inches='tight')
 plt.show()
 
 # Below are the box plots for company sales data
@@ -47,5 +47,5 @@ sns.boxplot(data=melted, x='Product', y='Units Sold', hue='Product', palette='Se
 plt.title('Spread of Monthly Sales by Product', fontsize=14, fontweight='bold')
 plt.xticks(rotation=20)
 plt.tight_layout()
-plt.savefig('4_box_plots.png', dpi=150)
+plt.savefig('box_plots.png', dpi=150)
 plt.show()
