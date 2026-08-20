@@ -1,2 +1,3 @@
 *.csv
 Data_visualisation/plots.ipynb
+Module_3/company_sales_visual.py
