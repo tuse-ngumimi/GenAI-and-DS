@@ -1,0 +1,59 @@
+<html><head><title>Admission Report</title>
+<style>body{font-family:Arial;max-width:1000px;margin:auto} td,th{padding:6px 12px}</style></head>
+<body>
+<h1>Admission Data Explorer Report</h1>
+<h2>Summary</h2><p>Out of 1000 total applications, 40 remain pending, resulting in an overall acceptance rate of 45.4%. The applicant pool is evenly divided between males at 48.8% and females at 48.2% (with 3.0% unknown), though females experienced a higher acceptance rate of 47.5% compared to 44.7% for males and 22.2% for unknown. Application volume was led by Computer Science (250), Software Engineering (124), Nursing (102), Medicine & Surgery (100), and Accounting (81). Across specific programs, acceptance rates ranged from a high of 64.3% in Mass Communication to a low of 21.1% in Medicine & Surgery.</p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>metric</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>total_applicants</td>
+      <td>1000.0</td>
+    </tr>
+    <tr>
+      <td>pending</td>
+      <td>40.0</td>
+    </tr>
+    <tr>
+      <td>acceptance_rate_pct</td>
+      <td>45.4</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Top 5 programs</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>program</th>
+      <th>applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Computer Science</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>Software Engineering</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>Nursing</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <td>Medicine &amp; Surgery</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Accounting</td>
+      <td>81</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Charts</h2><img src="charts/top_programs.png" width="480"><img src="charts/gender_pie.png" width="480"><img src="charts/outcomes_pie.png" width="480"><img src="charts/exam_scores.png" width="480"><img src="charts/acceptance_by_program.png" width="480">
+</body></html>
